@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka-client</artifactId>
+    <artifactId>eureka-server</artifactId>
     <packaging>jar</packaging>
 
-    <name>eureka-client</name>
+    <name>eureka-server</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -32,7 +32,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
 
         <dependency>
@@ -40,11 +40,20 @@
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
 
-        <!--ribbon-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
