@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>app</artifactId>
+    <artifactId>zuul</artifactId>
+
 
     <dependencyManagement>
         <dependencies>
@@ -47,7 +48,7 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
 
     </dependencies>
@@ -60,4 +61,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

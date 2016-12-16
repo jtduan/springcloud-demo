@@ -10,6 +10,8 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>app</module>
+        <module>hystrix</module>
+        <module>zuul</module>
     </modules>
 
     <parent>
