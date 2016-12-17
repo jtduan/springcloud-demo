@@ -24,6 +24,12 @@
     - 只需要在应用层模块加入Ribbon包即可
     - app为应用，启动后访问url,查看eureka-client的输出,启动2个eureka-client观察负载均衡的效果
 
+## Spring Cloud Bus
+## Spring Cloud Feign
+## Spring Cloud Zookeeper
+## Spring Cloud Hystrix
+## Spring Cloud Admin
+
 ## 配置文件
     - ${profile:dev1} 可以引用profile变量的值,若不存在，则使用dev1
     - spring.profiles.active == spring.cloud.config.profile

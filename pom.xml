@@ -10,8 +10,8 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>app</module>
-        <module>hystrix</module>
-        <module>zuul</module>
+        <module>hystrix-dashboard</module>
+        <module>springboot-admin</module>
     </modules>
 
     <parent>
@@ -26,6 +26,13 @@
     <version>3.0-Final</version>
     <packaging>pom</packaging>
 
+    <dependencies>
+        <!--暴露各种指标-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
 
     <repositories>
         <repository>
